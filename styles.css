@@ -1,0 +1,120 @@
+/* :root {
+    --step--2: clamp(1.04rem, 0.90rem + 0.60vw, 1.44rem);
+    --step--1: clamp(1.25rem, 1.06rem + 0.83vw, 1.80rem);
+    --step-0: clamp(1.50rem, 1.24rem + 1.13vw, 2.25rem);
+    --step-1: clamp(1.80rem, 1.44rem + 1.52vw, 2.81rem);
+    --step-2: clamp(2.16rem, 1.68rem + 2.04vw, 3.52rem);
+    --step-3: clamp(2.59rem, 1.96rem + 2.71vw, 4.39rem);
+    --step-4: clamp(3.11rem, 2.27rem + 3.58vw, 5.49rem);
+    --step-5: clamp(3.73rem, 2.63rem + 4.71vw, 6.87rem);
+  } */
+
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    font-size: clamp(1.50rem, 1.24rem + 1.13vw, 2.25rem);
+    font-weight: 200;
+    margin-top: 5rem;
+}
+.bold{
+    font-weight: 600;
+}
+p{
+    color: hsl(229, 6%, 66%);
+}
+.paragraph-main{
+    width: 80%;
+    max-width: 33rem;
+    margin-top:0;
+}
+.cards-wrapper{
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 20rem;
+    height: 14rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    
+}
+.card-cyan{
+    background: linear-gradient(
+        to bottom, 
+        hsl(180, 62%, 55%) 0%, hsl(180, 62%, 55%) 1.5%,
+        white 1.5%, white 100%);
+}
+.card-red{
+    background: linear-gradient(
+        to bottom, 
+        hsl(0, 78%, 62%) 0%, hsl(0, 78%, 62%) 1.5%,
+        white 1.5%, white 100%);
+}
+.card-orange{
+    background: linear-gradient(
+        to bottom, 
+        hsl(34, 97%, 64%) 0%, hsl(34, 97%, 64%) 1.5%,
+        white 1.5%, white 100%);
+}
+.card-blue{
+    background: linear-gradient(
+        to bottom, 
+        hsl(212, 86%, 64%) 0%, hsl(212, 86%, 64%) 1.5%,
+        white 1.5%, white 100%);
+}
+h2{
+    font-size: 20px;
+   padding: 2rem 0 0 2rem;
+   margin: 0;
+  
+}
+.card-info{
+    font-size: 14px;
+    padding-left: 2rem;
+    margin: 0;
+}
+img{
+    float:right;
+    margin:2rem;
+    width: clamp(3.60rem, 3.46rem + 0.60vw, 4.00rem);
+}
+
+@media screen and (min-width: 1056px){
+    
+  .card-cyan{
+      margin-top: 9rem;
+  }
+
+  .card-orange{
+      order: 1;
+      margin-top: -7rem;
+  }
+  .card-blue{
+      margin-top: 9rem;
+  }
+
+}
+  
